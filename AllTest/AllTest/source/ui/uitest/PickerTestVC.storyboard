@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker TestVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PickerTestVC" customModule="AllTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="H59-iU-NGh">
+                                <rect key="frame" x="20" y="64" width="374" height="216"/>
+                                <connections>
+                                    <action selector="selectDate:" destination="Y6W-OH-hqX" eventType="valueChanged" id="oLw-wY-Zqo"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp8-iS-uBT">
+                                <rect key="frame" x="20" y="300" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15R-w2-WaF">
+                                <rect key="frame" x="20" y="577" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9G-Jr-TJN">
+                                <rect key="frame" x="20" y="341" width="374" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="eFk-6b-UTv"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="z8Y-Dg-Nvo"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H59-iU-NGh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="6Og-YH-1zi"/>
+                            <constraint firstItem="Q9G-Jr-TJN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="B4M-6B-VBd"/>
+                            <constraint firstItem="15R-w2-WaF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="G8H-fR-gfk"/>
+                            <constraint firstItem="Q9G-Jr-TJN" firstAttribute="top" secondItem="fp8-iS-uBT" secondAttribute="bottom" constant="20" id="L1p-fq-q6g"/>
+                            <constraint firstItem="H59-iU-NGh" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="beO-yF-dOu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="H59-iU-NGh" secondAttribute="trailing" constant="20" id="fwb-WS-6mH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Q9G-Jr-TJN" secondAttribute="trailing" constant="20" id="mYl-j5-7R9"/>
+                            <constraint firstItem="fp8-iS-uBT" firstAttribute="top" secondItem="H59-iU-NGh" secondAttribute="bottom" constant="20" id="oX6-4w-ogB"/>
+                            <constraint firstItem="15R-w2-WaF" firstAttribute="top" secondItem="Q9G-Jr-TJN" secondAttribute="bottom" constant="20" id="v04-ad-0BS"/>
+                            <constraint firstItem="fp8-iS-uBT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="vhb-2l-xWI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="H59-iU-NGh" id="dcf-0Y-PZe"/>
+                        <outlet property="datePickerLabel" destination="fp8-iS-uBT" id="edl-Vd-834"/>
+                        <outlet property="picker" destination="Q9G-Jr-TJN" id="S1f-Ch-Y52"/>
+                        <outlet property="pickerLabel" destination="15R-w2-WaF" id="q6h-PI-haR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

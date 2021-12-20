@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>Test Html</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--
+            webkit-touch-callout -> WKWebView 미리보기 3D Touch. link preview
+            -->
+<!--        <style>-->
+<!--            body { -webkit-touch-callout: none; }-->
+<!--        </style>-->
+        <script type="text/javascript">
+            function setName(name) {
+                //document.writeln(name)
+                document.getElementById('name').innerHTML=name;
+            }
+            function setVer(name) {
+                //document.writeln(name)
+                document.getElementById('ver').innerHTML=name;
+            }
+            function setNum(num) {
+                document.getElementById('p1').innerHTML=num;
+                
+                setLocalStorage(num);
+                setCookie(num);
+            }
+            function getRandomNum(){
+                window.webkit.messageHandlers.getRandomNum.postMessage('');
+            }
+            function sendData() {
+                window.webkit.messageHandlers.sendData.postMessage('abcd');
+            }
+            function windowOpen() {
+                // 수동 window open 테스트
+                window.open('test2.html');
+            }
+            function showAlert(msg) {
+                alert(msg);
+            }
+            function showConfirm(msg) {
+                let isConfirm = confirm(msg);
+                if(isConfirm) {
+                    // iOS safari에서 debug하면 확인 가능(iOS 13이상에서는 simulator만 debug 가능)
+                    console.log('confirm');
+                    window.webkit.messageHandlers.log.postMessage('confirm');
+                } else {
+                    console.log('cancel');
+                    window.webkit.messageHandlers.log.postMessage('cancel');
+                }
+            }
+            function initLocalData() {
+                initLocalStorage();
+                initCookie();
+            }
+            function initLocalStorage() {
+                // local storage
+                var data = localStorage.getItem('localRandom');
+                document.getElementById('localRandom').innerHTML=data;
+            }
+            function setLocalStorage(value) {
+                // local storage
+                localStorage.setItem('localRandom', value);
+                //localStorage['localRandom'] = value;
+                //localStorage.localRandom=value;
+                initLocalStorage();
+            }
+            function removeLocalStorage() {
+                // local storage
+                localStorage.clear(); // 전체삭제
+                //localStorage.removeItem('localRandom'); // 지정삭제
+                
+                initLocalStorage();
+            }
+            function initCookie() {
+                // cookie
+                // 앱 재실행 시 유지되나 재빌드 할경우 지워짐. 테스트시 주의
+                var x, y;
+                var val = document.cookie.split(';');
+                for (var i = 0; i < val.length; i++) {
+                    x = val[i].substr(0, val[i].indexOf('='));
+                    y = val[i].substr(val[i].indexOf('=') + 1);
+                    x = x.replace(/^\s+|\s+$/g, ''); // 앞과 뒤의 공백 제거하기
+                    if (x == 'cookie_name') {
+                        document.getElementById('cookieRandom').innerHTML=unescape(y);
+                    }
+                }
+            }
+            function setCookie(value) {
+                var exdate = new Date();
+                //exdate.setDate(exdate.getDate() + '1');
+                exdate.setMinutes(exdate.getMinutes() + 3);
+                
+                //var cookie_value = escape(value);
+                var cookie_value = escape(value) + '; expires=' + exdate.toUTCString();
+                document.cookie = 'cookie_name' + '=' + cookie_value;
+                
+                initCookie();
+            }
+            // 자동 window open 테스트
+            windowOpen();
+        </script>
+    </head>
+    <body>
+        Welcome!
+        <p id="ver"></p>
+        <p id="name"></p>
+        <br>
+        <input type="button" value="getRandomNum" onclick="getRandomNum()"/>
+        <br>
+        <input type="button" value="check send data" onclick="sendData()"/>
+        <p id="p1"></p>
+        <br>
+        <div data-role="popup" id="settings" data-theme="b">
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <br>
+        <p>phone number: <a href="tel:123-4567">123-4567</a></p>
+        <br>
+        <p>open test app1: <a href="alltestapp://data/path?data1=abc?data2=123">AllTestApp</a></p>
+        <br>
+        <p>open test app2: <a href="alltestapp2://">AllTestApp2</a></p>
+        <br>
+        <input type="button" value="widow open test" onclick="windowOpen()"/>
+        <br>
+        <p>link preview test: <a href="https://www.google.com">check long press</a></p>
+        <br>
+        <p>back test: <a href="test2.html">load test2.html</a></p>
+        <br>
+        <input type="button" value="show alert" onclick="showAlert('test')"/>
+        <br>
+        <input type="button" value="show confirm" onclick="showConfirm('test')"/>
+        <br>
+        <input type="button" value="check local data" onclick="initLocalData()"/>
+        <br>
+        <input type="button" value="remove local storage data" onclick="removeLocalStorage()"/>
+        <br>
+        local storage
+        <p id="localRandom"></p>
+        cookie
+        <p id="cookieRandom"></p>
+        <br>
+    </body>
+</html>

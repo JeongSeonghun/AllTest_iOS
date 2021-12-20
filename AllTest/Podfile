@@ -1,0 +1,57 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+# project, framework가 2개 이상일 경우 workspace를 설정해야 함
+workspace 'AllTest'
+
+def common_pods
+  pod 'DropDown', '~> 2.3' # dropdown 테스트
+  pod 'IQKeyboardManagerSwift', '~> 6.5' # 키보드 화면 처리 테스트
+  pod 'SideMenu', '~> 6.5' # side menu 테스트
+  pod 'lottie-ios', '~> 3.2' # lottie 애니메이션 테스트
+  pod 'Alamofire', '~> 5.2' # rest api 테스트
+  pod 'Toast-Swift', '~> 5.0.1' # toast 테스트(android 참고)
+  pod 'MaterialComponents/AppBar' # material app bar 테스트(andorid 참고)
+  pod 'CryptoSwift', '~> 1.4' # 암호화 테스트
+end
+
+target 'AllTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AllTest
+#  pod 'DropDown', '~> 2.3'
+#  pod 'IQKeyboardManagerSwift', '~> 6.5'
+#  pod 'SideMenu', '~> 6.5'
+#  pod 'lottie-ios', '~> 3.2'
+#  pod 'Alamofire', '~> 5.2'
+#  pod 'Toast-Swift', '~> 5.0.1'
+  common_pods
+
+  target 'AllTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AllTestUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'AllTest2' do
+  use_frameworks!
+  
+  common_pods
+  
+end
+
+target 'AllTest_InnerFramework' do
+  # 다른프로젝트 및 framework인 경우 프로젝트 경로 추가 필요
+  project 'AllTest_InnerFramework/AllTest_InnerFramework.project'
+  
+  use_frameworks!
+  
+#  common_pods
+  
+end

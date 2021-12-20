@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Select TestVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ImageSelectTestVC" customModule="AllTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etd-YO-mkW">
+                                <rect key="frame" x="180" y="344" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="clickCameraButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="C8h-Wm-1uc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-Xr-7X4">
+                                <rect key="frame" x="185" y="404" width="44" height="30"/>
+                                <state key="normal" title="Album"/>
+                                <connections>
+                                    <action selector="clickAlbumButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VQb-5m-NR4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jqy-xJ-rUT">
+                                <rect key="frame" x="87" y="74" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="JeQ-mv-s71"/>
+                                    <constraint firstAttribute="height" constant="240" id="qDt-G8-hnN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NAb-Xr-7X4" firstAttribute="centerX" secondItem="jqy-xJ-rUT" secondAttribute="centerX" id="DaM-Ob-eD4"/>
+                            <constraint firstItem="etd-YO-mkW" firstAttribute="top" secondItem="jqy-xJ-rUT" secondAttribute="bottom" constant="30" id="O3I-WS-U6g"/>
+                            <constraint firstItem="NAb-Xr-7X4" firstAttribute="top" secondItem="etd-YO-mkW" secondAttribute="bottom" constant="30" id="SJ1-ec-LT4"/>
+                            <constraint firstItem="etd-YO-mkW" firstAttribute="centerX" secondItem="jqy-xJ-rUT" secondAttribute="centerX" id="Vny-Jz-1GT"/>
+                            <constraint firstItem="jqy-xJ-rUT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ivE-iD-QzF"/>
+                            <constraint firstItem="jqy-xJ-rUT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="k0B-tN-WH8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="jqy-xJ-rUT" id="i8X-7f-Kiv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

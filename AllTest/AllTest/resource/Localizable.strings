@@ -1,0 +1,101 @@
+/* 
+  Localizable.strings
+  AllTest
+
+  Created by jsh on 2021/08/20.
+  
+*/
+
+// tab name
+"TAB_HOME" = "Home";
+"TAB_SETTING" = "Setting";
+
+"TAB_ALL" = "All";
+"TAB_UI" = "UI Test";
+"TAB_LIBRARY" = "Library Test";
+"TAB_ETC" = "Etc";
+
+// ViewController title
+"TITLE_LIFECYCLE_TEST" = "Life Cycle Test";
+"TITLE_TABLEVIEW_TEST" = "TableView Test";
+"TITLE_TABLE_HEADER_TEST" = "TableView Header Test";
+"TITLE_TABLE_EXPAND_TEST" = "TableView Expand Test";
+"TITLE_TABLE_CHANGE_HEIGHT_TEST" = "TableView Change Height Test";
+"TITLE_TEXT_TEST" = "Text Test";
+"TITLE_WEBVIEW_TEST" = "WebView Test";
+"TITLE_WEBVIEW_JS_TEST" = "WebView Javascript Test";
+"TITLE_COLLECTION_TEST" = "CollectionView Test";
+"TITLE_COLLECTION_CHANGE_HEIGHT_TEST" = "CollectionView Change Height Test";
+"TITLE_COLLECTION_ORIENTATION_TEST" = "CollectionView Orientation Test";
+"TITLE_CUSTOMVIEW_TEST" = "CustomView Test";
+"TITLE_ALERT_TEST" = "Alert Test";
+"TITLE_FORMAT_TEST" = "Format Test";
+"TITLE_DATA_TEST" = "Data Test";
+"TITLE_DATA_SAVE_TEST" = "Data Save Test";
+"TITLE_VALIDATE_TEST" = "Check Validate Test";
+"TITLE_IMAGE_SELECT_TEST" = "Select Image Test";
+"TITLE_PAGING_TEST" = "Paging Test";
+"TITLE_VEDIO_TEST" = "Vedio Play Test";
+"TITLE_AUDIO_TEST" = "Audio Play Test";
+"TITLE_DELAY_TIMER_TEST" = "Delay Timer Test";
+"TITLE_PRESENT_PUSH_TEST" = "Present Push Test";
+"TITLE_DROPDOWN_TEST" = "DropDown Test";
+"TITLE_KEYBOARD_TEST" = "Keyboard Test";
+"TITLE_SIDEMENU_TEST" = "Side Menu Test";
+"TITLE_LOTTIE_TEST" = "Lottie Test";
+"TITLE_ASSET_TEST" = "Asset Test";
+"TITLE_APP_INFO" = "App Info Test";
+"TITLE_PICKER_TEST" = "Picker Test";
+"TITLE_TABBARCONTROLLER_TEST" = "Tab Bar Controller Test";
+"TITLE_NOTIFICATION_TEST" = "Notification Test";
+"TITLE_ANIMATION_TEST" = "Animation Test";
+"TITLE_PROPERTY_ANIMATOR_TEST" = "Property Animator Test";
+"TITLE_LOCATION_TEST" = "Location Test";
+"TITLE_TOAST_TEST" = "Toast Test";
+"TITLE_BLUETOOTH_TEST" = "Bluetooth Test";
+"TITLE_CONTAINER_TEST" = "Container Test";
+"TITLE_PROGRESS_TEST" = "Progress Test";
+"TITLE_INDICATOR_TEST" = "Indicator Test";
+"TITLE_SLIDER_TEST" = "Slider Test";
+"TITLE_FRAMEWORK_TEST" = "Framework Test";
+"TITLE_TARGET_TEST" = "Target Test";
+"TITLE_MATEREAL_TOP_BAR_TEST" = "Material Top Bar Test";
+"TITLE_QUICK_ACTION_TEST" = "Quick Action Test";
+"TITLE_ENCRYPTION_TEST" = "Encryption Test";
+"TITLE_LICENSE" = "Open Source License List";
+"TITLE_BACKGROUND_TEST" = "Background Test";
+
+// popup title
+"POPUP_COMMON" = "Title";
+
+// popup message
+"MSG_VALIDATE_EMAIL" = "사용가능합니다.";
+"MSG_VALIDATE_PWD" = "사용가능합니다.";
+"MSG_INVALIDATE_EMAIL" = "이메일을 확인해주세요.";
+"MSG_INVALIDATE_PWD" = "비밀번호 유효성을 확인해주세요.";
+"MSG_COMMON" = "message";
+
+// format
+"FORM_TEXT" = "Text : %@";
+"FORM_NUM" = "Num : %d";
+"FORM_DOUBLE" = "Double : %f";
+"FORM_DOUBLE_CNT" = "Double : %.1f";
+"FORM_DATE24" = "yyyy.MM.dd(E) HH:mm:ss:SSS";
+"FORM_DATE" = "yyyy.MM.dd(E) a hh:mm:ss:SSS";
+
+// common
+"EMAIL" = "이메일";
+"PASSWORD" = "비밀번호";
+"CONFIRM" = "확인";
+"CANCEL" = "취소";
+"DELETE" = "삭제";
+"APP_VERSION" = "앱 버전";
+"SETTING" = "설정";
+"SAVE" = "저장";
+"INIT" = "초기화";
+
+// Setting
+"SETTING_APP_VERSION" = "App version";
+"SETTING_LICENSE" = "Open Source";
+"STATE_DEBUG" = "debug";
+"STATE_RELEASE" = "release";

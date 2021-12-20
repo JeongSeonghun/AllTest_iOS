@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:AllTest_StaticFramework/AllTest_StaticFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AllTest_StaticLibObc/AllTest_StaticLibObc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AllTest_InnerFramework/AllTest_InnerFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AllTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

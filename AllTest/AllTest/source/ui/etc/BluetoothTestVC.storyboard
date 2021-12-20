@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bluetooth TestVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="BluetoothTestVC" customModule="AllTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-Cl-UK5">
+                                <rect key="frame" x="20" y="64" width="89" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="scan start"/>
+                                <connections>
+                                    <action selector="startScan" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qUI-fR-gd4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-v2-YSy">
+                                <rect key="frame" x="129" y="64" width="87" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="scan stop"/>
+                                <connections>
+                                    <action selector="stopScan" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QzT-4d-9HW"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tAD-Op-Z0n">
+                                <rect key="frame" x="20" y="105" width="374" height="737"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="aLh-PD-Vux"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="neL-Bs-aoi"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGA-iq-Lba">
+                                <rect key="frame" x="352" y="64" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EPP-v2-YSy" firstAttribute="leading" secondItem="Uad-Cl-UK5" secondAttribute="trailing" constant="20" id="2Vl-VD-BE2"/>
+                            <constraint firstItem="tAD-Op-Z0n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4TR-6b-bx5"/>
+                            <constraint firstItem="MGA-iq-Lba" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="6C2-9c-1hU"/>
+                            <constraint firstItem="EPP-v2-YSy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Hrq-zs-igQ"/>
+                            <constraint firstItem="tAD-Op-Z0n" firstAttribute="top" secondItem="Uad-Cl-UK5" secondAttribute="bottom" constant="10" id="Kjm-Q8-EdL"/>
+                            <constraint firstItem="Uad-Cl-UK5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="MNh-nP-IRL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tAD-Op-Z0n" secondAttribute="bottom" constant="20" id="S8D-VO-xjC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tAD-Op-Z0n" secondAttribute="trailing" constant="20" id="YrS-L7-aWe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MGA-iq-Lba" secondAttribute="trailing" constant="20" id="nXT-8l-nhu"/>
+                            <constraint firstItem="Uad-Cl-UK5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ou4-2a-nA4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stateLabel" destination="MGA-iq-Lba" id="8wg-1h-ovB"/>
+                        <outlet property="tableView" destination="tAD-Op-Z0n" id="JKI-oq-YCj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

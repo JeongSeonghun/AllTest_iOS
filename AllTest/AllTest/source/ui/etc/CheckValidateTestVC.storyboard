@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Check Validate TestVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CheckValidateTestVC" customModule="AllTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-rC-JUk">
+                                <rect key="frame" x="20" y="64" width="40.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="EMAIL"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aaj-3x-i6q">
+                                <rect key="frame" x="20" y="105" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKd-fk-xzV">
+                                <rect key="frame" x="352" y="59.5" width="42" height="30"/>
+                                <state key="normal" title="check"/>
+                                <connections>
+                                    <action selector="clickCheckEmail" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5RV-wV-y9Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TK-jF-coo">
+                                <rect key="frame" x="20" y="169" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="PASSWORD"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mm3-dd-T1l">
+                                <rect key="frame" x="20" y="210" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qQ-lV-zO6">
+                                <rect key="frame" x="352" y="164.5" width="42" height="30"/>
+                                <state key="normal" title="check"/>
+                                <connections>
+                                    <action selector="clickCheckPwd" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KPj-mG-i3T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2TK-jF-coo" firstAttribute="top" secondItem="Aaj-3x-i6q" secondAttribute="bottom" constant="30" id="4nm-be-k3E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uKd-fk-xzV" secondAttribute="trailing" constant="20" id="8AX-k4-Nxb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Aaj-3x-i6q" secondAttribute="trailing" constant="20" id="DAm-ix-xhq"/>
+                            <constraint firstItem="4qQ-lV-zO6" firstAttribute="centerY" secondItem="2TK-jF-coo" secondAttribute="centerY" id="H3U-fq-VSJ"/>
+                            <constraint firstItem="uh8-rC-JUk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Jwo-6p-e7g"/>
+                            <constraint firstItem="2TK-jF-coo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="TaX-wU-QzM"/>
+                            <constraint firstItem="uKd-fk-xzV" firstAttribute="centerY" secondItem="uh8-rC-JUk" secondAttribute="centerY" id="VEP-Pq-Suo"/>
+                            <constraint firstItem="Aaj-3x-i6q" firstAttribute="top" secondItem="uh8-rC-JUk" secondAttribute="bottom" constant="20" id="YVx-qL-WnR"/>
+                            <constraint firstItem="Mm3-dd-T1l" firstAttribute="top" secondItem="2TK-jF-coo" secondAttribute="bottom" constant="20" id="bAW-3g-GVb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Mm3-dd-T1l" secondAttribute="trailing" constant="20" id="bMm-qo-WJt"/>
+                            <constraint firstItem="Mm3-dd-T1l" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gN9-QG-K5Y"/>
+                            <constraint firstItem="Aaj-3x-i6q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hZQ-rv-tW8"/>
+                            <constraint firstItem="uh8-rC-JUk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="izH-bM-Kqd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4qQ-lV-zO6" secondAttribute="trailing" constant="20" id="paX-Zd-k33"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="Aaj-3x-i6q" id="s47-Wu-xuq"/>
+                        <outlet property="pwdField" destination="Mm3-dd-T1l" id="cIF-mD-H0s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

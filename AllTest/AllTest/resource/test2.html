@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Test Html</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            function closeWindow() {
+                window.close();
+            }
+            function goBack() {
+                window.webkit.messageHandlers.goBack.postMessage('');
+            }
+            function setNum(num) {
+                setLocalStorage(num);
+                setCookie(num);
+            }
+            function getRandomNum(){
+                window.webkit.messageHandlers.getRandomNum.postMessage('');
+            }
+            function initLocalData() {
+                initLocalStorage();
+                initCookie();
+            }
+            function initLocalStorage() {
+                // local storage
+                var data = localStorage.getItem('localRandom');
+                document.getElementById('localRandom').innerHTML=data;
+            }
+            function initCookie() {
+                // cookie
+                // 앱 재실행 시 유지되나 재빌드 할경우 지워짐. 테스트시 주의
+                var x, y;
+                var val = document.cookie.split(';');
+                for (var i = 0; i < val.length; i++) {
+                    x = val[i].substr(0, val[i].indexOf('='));
+                    y = val[i].substr(val[i].indexOf('=') + 1);
+                    x = x.replace(/^\s+|\s+$/g, ''); // 앞과 뒤의 공백 제거하기
+                    if (x == 'cookie_name') {
+                        document.getElementById('cookieRandom').innerHTML=unescape(y);
+                    }
+                }
+            }
+            function setLocalStorage(value) {
+                // local storage
+                localStorage.setItem('localRandom', value);
+                //localStorage['localRandom'] = value;
+                //localStorage.localRandom=value;
+                initLocalStorage();
+            }
+            function setCookie(value) {
+                var exdate = new Date();
+                //exdate.setDate(exdate.getDate() + '1');
+                exdate.setMinutes(exdate.getMinutes() + 3);
+                
+                //var cookie_value = escape(value);
+                var cookie_value = escape(value) + '; expires=' + exdate.toUTCString();
+                document.cookie = 'cookie_name' + '=' + cookie_value;
+                
+                initCookie();
+            }
+        </script>
+    </head>
+    <body>
+        Welcome Test2!
+        <br>
+        <input type="button" value="close window" onclick="closeWindow()"/>
+        <br>
+        <input type="button" value="back" onclick="goBack()"/>
+        <br>
+        <input type="button" value="getRandomNum" onclick="getRandomNum()"/>
+        <br>
+        <input type="button" value="check local data" onclick="initLocalData()"/>
+        <br>
+        local storage
+        <p id="localRandom"></p>
+        cookie
+        <p id="cookieRandom"></p>
+        <br>
+    </body>
+</html>

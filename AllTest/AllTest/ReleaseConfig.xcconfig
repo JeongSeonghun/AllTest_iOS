@@ -1,0 +1,14 @@
+//
+//  ReleaseConfig.xcconfig
+//  AllTest
+//  
+//  Created by jsh on 2021/09/14
+//  custom header comment
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// 해당 경로에 파일이 없는 경우 빌드 오류 발생
+#include "CommonConfig.xcconfig"
+
+RELEASE_TEST_CONFIG = 1234

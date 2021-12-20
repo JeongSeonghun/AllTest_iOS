@@ -1,0 +1,11 @@
+//
+//  CommonConfig.xcconfig
+//  AllTest
+//  
+//  Created by jsh on 2021/09/10
+//  custom header comment
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+TEST_CONFIG = abcd1234
