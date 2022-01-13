@@ -74,6 +74,8 @@
 "MSG_INVALIDATE_EMAIL" = "이메일을 확인해주세요.";
 "MSG_INVALIDATE_PWD" = "비밀번호 유효성을 확인해주세요.";
 "MSG_COMMON" = "message";
+"MSG_NEED_CAMERA_PERMISSION" = "카메라 권한이 필요합니다.";
+"MSG_NEED_PICTURE_PERMISSION" = "앨범 권한이 필요합니다.";
 
 // format
 "FORM_TEXT" = "Text : %@";

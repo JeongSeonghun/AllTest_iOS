@@ -206,6 +206,8 @@
 		787C5A282744FFFC000FFC07 /* QuickActionTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787C5A272744FFFC000FFC07 /* QuickActionTestVC.storyboard */; };
 		787C5A292745DE37000FFC07 /* QuickActionTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C5A252744FFE0000FFC07 /* QuickActionTestVC.swift */; };
 		787C5A2A2745DE3E000FFC07 /* QuickActionTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787C5A272744FFFC000FFC07 /* QuickActionTestVC.storyboard */; };
+		787EF76C278D22A000832167 /* TestAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787EF76B278D22A000832167 /* TestAlert.swift */; };
+		787EF76D278D22A000832167 /* TestAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787EF76B278D22A000832167 /* TestAlert.swift */; };
 		7881B4582733C931009C8AE8 /* URLOpeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7881B4572733C931009C8AE8 /* URLOpeUtil.swift */; };
 		7881B45B2733C9FA009C8AE8 /* URLOpeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7881B45A2733C9FA009C8AE8 /* URLOpeUtil.swift */; };
 		7881B45F2734DBF4009C8AE8 /* TestNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7881B45E2734DBF4009C8AE8 /* TestNotificationExtension.swift */; };
@@ -455,6 +457,7 @@
 		787C5A1D2744E78A000FFC07 /* TestQuickAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuickAction.swift; sourceTree = "<group>"; };
 		787C5A252744FFE0000FFC07 /* QuickActionTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionTestVC.swift; sourceTree = "<group>"; };
 		787C5A272744FFFC000FFC07 /* QuickActionTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuickActionTestVC.storyboard; sourceTree = "<group>"; };
+		787EF76B278D22A000832167 /* TestAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAlert.swift; sourceTree = "<group>"; };
 		7881B4572733C931009C8AE8 /* URLOpeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpeUtil.swift; sourceTree = "<group>"; };
 		7881B45A2733C9FA009C8AE8 /* URLOpeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpeUtil.swift; sourceTree = "<group>"; };
 		7881B45E2734DBF4009C8AE8 /* TestNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNotificationExtension.swift; sourceTree = "<group>"; };
@@ -1019,6 +1022,7 @@
 				780728472702F894005D0F95 /* TestIndicator.swift */,
 				78453CD6272BC4C00035EE08 /* TargetTestView.swift */,
 				78453CD8272BC4C90035EE08 /* TargetTestView.xib */,
+				787EF76B278D22A000832167 /* TestAlert.swift */,
 				78453CDA272BC4EF0035EE08 /* target */,
 			);
 			path = view;
@@ -1641,6 +1645,7 @@
 				78453CAA272BBD8E0035EE08 /* AudioPlayTestVC.swift in Sources */,
 				78453CA0272BBD8E0035EE08 /* BluetoothTestVC.swift in Sources */,
 				78453CDD272BC6FC0035EE08 /* TargetTestView.swift in Sources */,
+				787EF76D278D22A000832167 /* TestAlert.swift in Sources */,
 				78453CD3272BC0CE0035EE08 /* TargetTestVC.swift in Sources */,
 				78453CBC272BBDA60035EE08 /* DataTestModel.swift in Sources */,
 				78453C9E272BBD8E0035EE08 /* AssetTestVC.swift in Sources */,
@@ -1748,6 +1753,7 @@
 				78F5A3EA26D4CBD0000280EB /* CollectionTestCell.swift in Sources */,
 				78AF0E9D26CFA99A003A5F34 /* LifeCycleTestVC.swift in Sources */,
 				78453CD7272BC4C00035EE08 /* TargetTestView.swift in Sources */,
+				787EF76C278D22A000832167 /* TestAlert.swift in Sources */,
 				78453CCF272BC09C0035EE08 /* TargetTestVC.swift in Sources */,
 				788CCD3526D72F9300BA1335 /* SQLiteDataManager.swift in Sources */,
 				780728442702F601005D0F95 /* IndicatorTestVC.swift in Sources */,
