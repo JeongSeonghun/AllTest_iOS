@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return false
         }
         
+//        UIApplication.shared.statusBarStyle = .lightContent
+        
         backTaskManager.readyBackgroundTask()
         return true
     }

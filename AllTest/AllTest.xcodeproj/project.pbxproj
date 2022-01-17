@@ -358,6 +358,12 @@
 		78F902F926F1DB7C007C570C /* LocationTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F902F826F1DB7C007C570C /* LocationTestVC.storyboard */; };
 		78F902FC26F32F50007C570C /* ToastTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F902FB26F32F50007C570C /* ToastTestVC.swift */; };
 		78F902FE26F32FE0007C570C /* ToastTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F902FD26F32FE0007C570C /* ToastTestVC.storyboard */; };
+		78FC762C2790246300E784EA /* AppBarTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC762B2790246300E784EA /* AppBarTestVC.swift */; };
+		78FC762D2790246300E784EA /* AppBarTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC762B2790246300E784EA /* AppBarTestVC.swift */; };
+		78FC762F2790247900E784EA /* AppBarTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FC762E2790247900E784EA /* AppBarTestVC.storyboard */; };
+		78FC76302790247900E784EA /* AppBarTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FC762E2790247900E784EA /* AppBarTestVC.storyboard */; };
+		78FC7633279161E500E784EA /* TestNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7632279161E500E784EA /* TestNavigationController.swift */; };
+		78FC7634279161E600E784EA /* TestNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7632279161E500E784EA /* TestNavigationController.swift */; };
 		84C66144E42D8567095414AA /* Pods_AllTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD51024F8F3A82DD2B6F7E4 /* Pods_AllTest.framework */; };
 		A2F9408390EB619BA55197AB /* Pods_AllTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E47ADF22F2FC04363DB59B /* Pods_AllTestTests.framework */; };
 		C1D787F1BBE4265F6FB0F59A /* Pods_AllTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACC80373612F5CD33B521F9 /* Pods_AllTest2.framework */; };
@@ -611,6 +617,9 @@
 		78F902F826F1DB7C007C570C /* LocationTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationTestVC.storyboard; sourceTree = "<group>"; };
 		78F902FB26F32F50007C570C /* ToastTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastTestVC.swift; sourceTree = "<group>"; };
 		78F902FD26F32FE0007C570C /* ToastTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToastTestVC.storyboard; sourceTree = "<group>"; };
+		78FC762B2790246300E784EA /* AppBarTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarTestVC.swift; sourceTree = "<group>"; };
+		78FC762E2790247900E784EA /* AppBarTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppBarTestVC.storyboard; sourceTree = "<group>"; };
+		78FC7632279161E500E784EA /* TestNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationController.swift; sourceTree = "<group>"; };
 		7ECD0B78BB5816DD0E4B28B1 /* Pods-AllTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllTestTests.release.xcconfig"; path = "Target Support Files/Pods-AllTestTests/Pods-AllTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BBAABE291CD608359C9E91B /* Pods-AllTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllTest2.release.xcconfig"; path = "Target Support Files/Pods-AllTest2/Pods-AllTest2.release.xcconfig"; sourceTree = "<group>"; };
 		8C7755A87D22594AA7942BAE /* Pods-AllTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllTest2.debug.xcconfig"; path = "Target Support Files/Pods-AllTest2/Pods-AllTest2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -859,6 +868,7 @@
 				78AF0E9026CF8C7C003A5F34 /* SettingVC.storyboard */,
 				788CCD4726D78D4100BA1335 /* SettingCell.swift */,
 				78149F77274CC197008C15FD /* OpensSourceListVC.swift */,
+				78FC7632279161E500E784EA /* TestNavigationController.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -928,6 +938,8 @@
 				7807284B27030347005D0F95 /* SliderTestVC.storyboard */,
 				780728432702F601005D0F95 /* IndicatorTestVC.swift */,
 				780728452702F615005D0F95 /* IndicatorTestVC.storyboard */,
+				78FC762B2790246300E784EA /* AppBarTestVC.swift */,
+				78FC762E2790247900E784EA /* AppBarTestVC.storyboard */,
 			);
 			path = uitest;
 			sourceTree = "<group>";
@@ -1281,6 +1293,7 @@
 				78453C54272BBD590035EE08 /* PagingTestVC.storyboard in Resources */,
 				78453C45272BBD360035EE08 /* SettingVC.storyboard in Resources */,
 				78453C33272BBC8A0035EE08 /* LaunchScreen.storyboard in Resources */,
+				78FC76302790247900E784EA /* AppBarTestVC.storyboard in Resources */,
 				78453C98272BBD8E0035EE08 /* DataTestVC.storyboard in Resources */,
 				78453C40272BBCD30035EE08 /* ani_paint_globe.json in Resources */,
 				78453C8B272BBD870035EE08 /* SideMenuTestVC.storyboard in Resources */,
@@ -1357,6 +1370,7 @@
 				78F9029A26E9CA50007C570C /* DropDownTestVC.storyboard in Resources */,
 				78F5A3E426D4CA8D000280EB /* CollectionChangeHeightVC.storyboard in Resources */,
 				78C83C5127069F9B001C881A /* FrameworkTestVC.storyboard in Resources */,
+				78FC762F2790247900E784EA /* AppBarTestVC.storyboard in Resources */,
 				78F902FE26F32FE0007C570C /* ToastTestVC.storyboard in Resources */,
 				78F902F026F1AF26007C570C /* AnimationTestVC.storyboard in Resources */,
 				7807283C2702E5E8005D0F95 /* ContainerTestVC.storyboard in Resources */,
@@ -1652,7 +1666,9 @@
 				78453CBA272BBD9F0035EE08 /* ChangeHeightCollectionView.swift in Sources */,
 				78453C56272BBD590035EE08 /* PagingTestVC.swift in Sources */,
 				787C5A202744EC71000FFC07 /* TestContact.swift in Sources */,
+				78FC7634279161E600E784EA /* TestNavigationController.swift in Sources */,
 				7838F4C5276C7110007DC819 /* AntiDebug.m in Sources */,
+				78FC762D2790246300E784EA /* AppBarTestVC.swift in Sources */,
 				78453CAD272BBD8E0035EE08 /* NotificationTestVC.swift in Sources */,
 				78C3C32F2766E6500006142C /* Const.swift in Sources */,
 				78453CAE272BBD8E0035EE08 /* FormatTestVC.swift in Sources */,
@@ -1760,7 +1776,9 @@
 				78F902B426EB3958007C570C /* AssetTestVC.swift in Sources */,
 				78F902E226F08650007C570C /* TabControllerTestVC.swift in Sources */,
 				787C5A1C2744E53D000FFC07 /* TestContact.swift in Sources */,
+				78FC7633279161E500E784EA /* TestNavigationController.swift in Sources */,
 				7838F4C4276C7110007DC819 /* AntiDebug.m in Sources */,
+				78FC762C2790246300E784EA /* AppBarTestVC.swift in Sources */,
 				78F902E826F09E12007C570C /* NotificationTestVC.swift in Sources */,
 				78C3C32E2766E6500006142C /* Const.swift in Sources */,
 				78F5A3F226D4D05C000280EB /* ChangeHeightCollectionView.swift in Sources */,

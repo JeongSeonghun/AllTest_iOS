@@ -64,6 +64,7 @@
 "TITLE_ENCRYPTION_TEST" = "Encryption Test";
 "TITLE_LICENSE" = "Open Source License List";
 "TITLE_BACKGROUND_TEST" = "Background Test";
+"TITLE_APPBAR_TEST" = "AppBar Test";
 
 // popup title
 "POPUP_COMMON" = "Title";
