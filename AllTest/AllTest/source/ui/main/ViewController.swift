@@ -89,6 +89,7 @@ extension ViewController {
         uiList.append(TestVCItem(storyboardName: "IndicatorTestVC", title: "TITLE_INDICATOR_TEST".localized()))
         uiList.append(TestVCItem(storyboardName: "SliderTestVC", title: "TITLE_SLIDER_TEST".localized()))
         uiList.append(TestVCItem(storyboardName: "AppBarTestVC", title: "TITLE_APPBAR_TEST".localized()))
+        uiList.append(TestVCItem(storyboardName: "RefreshTestVC", title: "TITLE_REFRESH_TEST".localized()))
         
         // library
         libList.append(TestVCItem(storyboardName: "DropDownTestVC", title: "TITLE_DROPDOWN_TEST".localized()))

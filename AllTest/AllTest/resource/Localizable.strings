@@ -65,6 +65,7 @@
 "TITLE_LICENSE" = "Open Source License List";
 "TITLE_BACKGROUND_TEST" = "Background Test";
 "TITLE_APPBAR_TEST" = "AppBar Test";
+"TITLE_REFRESH_TEST" = "UIRefresh Test";
 
 // popup title
 "POPUP_COMMON" = "Title";
@@ -96,6 +97,8 @@
 "SETTING" = "설정";
 "SAVE" = "저장";
 "INIT" = "초기화";
+"START" = "start";
+"STOP" = "stop";
 
 // Setting
 "SETTING_APP_VERSION" = "App version";

@@ -192,6 +192,10 @@
 		78453CEC272BE0560035EE08 /* MaterialTopBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78453CEA272BE0560035EE08 /* MaterialTopBarVC.swift */; };
 		78453CEE272BE0720035EE08 /* MaterialTopBarVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78453CED272BE0720035EE08 /* MaterialTopBarVC.storyboard */; };
 		78453CEF272BE0720035EE08 /* MaterialTopBarVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78453CED272BE0720035EE08 /* MaterialTopBarVC.storyboard */; };
+		7855B6AE27ED8A1E00AA1269 /* RefreshTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7855B6AD27ED8A1E00AA1269 /* RefreshTestVC.swift */; };
+		7855B6AF27ED8A1E00AA1269 /* RefreshTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7855B6AD27ED8A1E00AA1269 /* RefreshTestVC.swift */; };
+		7855B6B127ED8A4500AA1269 /* RefreshTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7855B6B027ED8A4500AA1269 /* RefreshTestVC.storyboard */; };
+		7855B6B227ED8A4500AA1269 /* RefreshTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7855B6B027ED8A4500AA1269 /* RefreshTestVC.storyboard */; };
 		7871671826D5EFDD005A9FA6 /* AlertTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7871671726D5EFDD005A9FA6 /* AlertTestVC.swift */; };
 		7871671A26D5EFF3005A9FA6 /* AlertTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7871671926D5EFF3005A9FA6 /* AlertTestVC.storyboard */; };
 		787C5A172744D431000FFC07 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C5A162744D431000FFC07 /* TestManager.swift */; };
@@ -455,6 +459,8 @@
 		78453CE2272BC9490035EE08 /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets1.xcassets; sourceTree = "<group>"; };
 		78453CEA272BE0560035EE08 /* MaterialTopBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTopBarVC.swift; sourceTree = "<group>"; };
 		78453CED272BE0720035EE08 /* MaterialTopBarVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaterialTopBarVC.storyboard; sourceTree = "<group>"; };
+		7855B6AD27ED8A1E00AA1269 /* RefreshTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTestVC.swift; sourceTree = "<group>"; };
+		7855B6B027ED8A4500AA1269 /* RefreshTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RefreshTestVC.storyboard; sourceTree = "<group>"; };
 		7871671726D5EFDD005A9FA6 /* AlertTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestVC.swift; sourceTree = "<group>"; };
 		7871671926D5EFF3005A9FA6 /* AlertTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertTestVC.storyboard; sourceTree = "<group>"; };
 		787C5A162744D431000FFC07 /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
@@ -940,6 +946,8 @@
 				780728452702F615005D0F95 /* IndicatorTestVC.storyboard */,
 				78FC762B2790246300E784EA /* AppBarTestVC.swift */,
 				78FC762E2790247900E784EA /* AppBarTestVC.storyboard */,
+				7855B6AD27ED8A1E00AA1269 /* RefreshTestVC.swift */,
+				7855B6B027ED8A4500AA1269 /* RefreshTestVC.storyboard */,
 			);
 			path = uitest;
 			sourceTree = "<group>";
@@ -1337,6 +1345,7 @@
 				78453C5E272BBD590035EE08 /* IndicatorTestVC.storyboard in Resources */,
 				787C5A2A2745DE3E000FFC07 /* QuickActionTestVC.storyboard in Resources */,
 				78453C8A272BBD870035EE08 /* CustomDropdownCell.xib in Resources */,
+				7855B6B227ED8A4500AA1269 /* RefreshTestVC.storyboard in Resources */,
 				78453C89272BBD870035EE08 /* LottieTestVC.storyboard in Resources */,
 				78453C9B272BBD8E0035EE08 /* BluetoothTestVC.storyboard in Resources */,
 				78453C97272BBD8E0035EE08 /* VedioPlayTestVC.storyboard in Resources */,
@@ -1414,6 +1423,7 @@
 				788CCD1526D6252100BA1335 /* FormatTestVC.storyboard in Resources */,
 				787C5A282744FFFC000FFC07 /* QuickActionTestVC.storyboard in Resources */,
 				78AF0E9F26CFAB43003A5F34 /* LifeCycleTestVC.storyboard in Resources */,
+				7855B6B127ED8A4500AA1269 /* RefreshTestVC.storyboard in Resources */,
 				78F5A3CA26D47E56000280EB /* test.html in Resources */,
 				78F5A3A226D3901C000280EB /* TableHeaderTestVC.storyboard in Resources */,
 				7871671A26D5EFF3005A9FA6 /* AlertTestVC.storyboard in Resources */,
@@ -1611,6 +1621,7 @@
 				78453C6B272BBD600035EE08 /* CustomHeader.swift in Sources */,
 				78453C4E272BBD590035EE08 /* CustomViewTestVC.swift in Sources */,
 				7881B45B2733C9FA009C8AE8 /* URLOpeUtil.swift in Sources */,
+				7855B6AF27ED8A1E00AA1269 /* RefreshTestVC.swift in Sources */,
 				78453C57272BBD590035EE08 /* PickerTestVC.swift in Sources */,
 				78453CB7272BBD9F0035EE08 /* CustomView.swift in Sources */,
 				78453CA2272BBD8E0035EE08 /* DataSaveTestVC.swift in Sources */,
@@ -1721,6 +1732,7 @@
 				788CCD1326D624F200BA1335 /* FormatTestVC.swift in Sources */,
 				78AF0E8F26CF8C64003A5F34 /* SettingVC.swift in Sources */,
 				788CCD4B26D8740C00BA1335 /* VedioPlayTestVC.swift in Sources */,
+				7855B6AE27ED8A1E00AA1269 /* RefreshTestVC.swift in Sources */,
 				788CCD3D26D764A500BA1335 /* PagingTestVC.swift in Sources */,
 				78F5A3EC26D4CC83000280EB /* CollectionLayoutTest.swift in Sources */,
 				788CCD3926D73ADD00BA1335 /* DBTestCell.swift in Sources */,

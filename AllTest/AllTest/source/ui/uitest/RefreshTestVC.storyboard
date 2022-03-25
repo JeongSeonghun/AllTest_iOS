@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Refresh TestVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="RefreshTestVC" customModule="AllTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tsl-po-Tez">
+                                <rect key="frame" x="0.0" y="106" width="414" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="Mrp-1Q-4BZ"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq7-nq-kkp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="START"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startRefresh" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RP2-q4-im5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwC-dM-HQU">
+                                <rect key="frame" x="0.0" y="75" width="414" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="stop"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="STOP"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopRefresh" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Zp-7h-naX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tsl-po-Tez" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EoG-aI-U5T"/>
+                            <constraint firstItem="tsl-po-Tez" firstAttribute="top" secondItem="WwC-dM-HQU" secondAttribute="bottom" id="G4A-uK-l61"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WwC-dM-HQU" secondAttribute="trailing" id="LOn-Yj-rM3"/>
+                            <constraint firstItem="WwC-dM-HQU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="X0x-Kf-Q65"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mq7-nq-kkp" secondAttribute="trailing" id="agP-dJ-aL4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tsl-po-Tez" secondAttribute="bottom" id="bKX-Be-P5d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tsl-po-Tez" secondAttribute="trailing" id="fPu-dj-77k"/>
+                            <constraint firstItem="mq7-nq-kkp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="flR-tl-bbR"/>
+                            <constraint firstItem="WwC-dM-HQU" firstAttribute="top" secondItem="mq7-nq-kkp" secondAttribute="bottom" id="gh9-jg-foE"/>
+                            <constraint firstItem="mq7-nq-kkp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nxf-kD-Ivd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="tsl-po-Tez" id="Ajn-5X-L49"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="37.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
